@@ -31,14 +31,20 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+$(".issue-btn").click(function(event) {
+    $(event.target).prev().slideToggle();
+});
+
+
 // Creates c3 chart
 $(document).ready(function() {
     var chart = c3.generate({
         data: {
             x: 'x',
             columns: [
-                ['x', '2000', '2002', '2004', '2006', '2008', '2010', '2012', '2014', '2016'],
-                ['spending', 33.8, 16.7, 63.9, 37.8, 143.6, 205.5, 1000, 549, 109]
+                ['x', '2000', '2002', '2004', '2006', '2008', '2010', '2012'],
+                ['spending', 33.8, 16.7, 63.9, 37.8, 143.6, 205.5, 1000]
             ],
             type: 'bar'
         },
