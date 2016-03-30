@@ -8,12 +8,23 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $('#logo').attr('src','img/logo_color.png');
+        $('.navbar-logo').attr('src','img/logo_color.png');
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $('#logo').attr('src','img/logo_white.png');
+        $('.navbar-logo').attr('src','img/logo_white.png');
     }
 });
+
+$(window).resize(function() {
+    if ($(".navbar").offset().top <= 50) {
+        if ($(window).width() >= 768) {
+            $('.navbar-logo').attr('src','img/logo_white.png');
+        } else {
+            $('.navbar-logo').attr('src','img/logo_color.png');
+        }
+    }
+    
+})
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {

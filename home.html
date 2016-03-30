@@ -15,117 +15,89 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700|EB+Garamond' rel='stylesheet' type='text/css'>
+
+    <!-- C3 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css">
     
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <img id="logo" src="img/logo_white.png">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Ideas</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Get Involved</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">Donate</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+              </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro-wrapper">
-        <div class="intro">
-            <div class="intro-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2 class="brand-heading">Millennial PAC</h2>
-                            <p class="intro-text">Providing political capital for young Americans</p>
-                            <a href="#about" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="intro">
+        <div class="intro-headline">
+            <h1>Millennial PAC</h1>
+            <h3 class="intro-headline-text">Providing political capital for young Americans</h3>
+            <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
         </div>
         
-        <div class="intro-banner row">
+        <div class="intro-banner">
             <div class="container">
-                <p class="banner-headline">Internships are unregulated. Most are illegal.</p>
-                <button type="button" class="btn btn-lg btn-info banner-button">
+                <p class="intro-banner-text">Internships are unregulated. Most are illegal.</p>
+                <button type="button" class="intro-banner-btn btn">
                   Sign the petition.
                 </button>
             </div>
         </div>
         
-    </header>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="container text-center">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
+    <section class="about">
+        <div class="about-container">
+            <div class="about-headline">
                 <h3>Young Americans can’t afford to donate to campaigns and don’t vote... Why would Congress listen to us?</h3>
-                <div class="row">
-                    <div class="col-md-6 about-text">
-                        <p>
-                            Since the Supreme Court’s decision in Citizens United v. Federal Elections Commission (2010) prohibited restriction on independent expenditure groups fundraising and spending, Super PACs have dominated the political climate. Millennial PAC provides a voice for millennials, by millennials. Young voters, young non-voters, and those too young to vote all need a voice in the world of independent expenditures. We run comprehensive political programs to represent the age demographic without representation in Congress.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div id="chart"></div>
-                    </div>
-                </div>
-                
             </div>
-            
+            <div class="row about-text-container">
+                <div class="col-sm-7 about-text">
+                    <p>
+                        Since the Supreme Court’s decision in Citizens United v. Federal Elections Commission (2010) prohibited restriction on independent expenditure groups fundraising and spending, Super PACs have dominated the political climate. Millennial PAC provides a voice for millennials, by millennials. Young voters, young non-voters, and those too young to vote all need a voice in the world of independent expenditures. We run comprehensive political programs to represent the age demographic without representation in Congress.
+                    </p>
+                </div>
+                <div class="col-sm-5 about-graph">
+                    <p class="about-graph-title">Outside Spending by Cycle, Excluding Party Committees</p>
+                    <div id="chart"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="issues" class="content-section text-center">
-        <div class="container">
+    <section class="issues">
+        <div class="issues-container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 issue-container">
                     <img class="issue-icon" src="./img/briefcaseicon.png">
                     <h3 class="issue-title">Employment</h3>
                     <p class="issue-text">Most unpaid internships are illegal. They must be regulated up to federal standards.</p>
@@ -133,7 +105,7 @@
                       Learn more ->
                     </button>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 issue-container">
                     <img class="issue-icon" src="./img/gradcapicon.png">
                     <h3 class="issue-title">Education</h3>
                    <p class="issue-text">Student loans are now more of a financial burden for Americans than credit card debt. We need change.</p>
@@ -141,7 +113,7 @@
                       Learn more ->
                     </button>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 issue-container">
                     <img class="issue-icon" src="./img/gunsafetyicon.png">
                     <h3 class="issue-title">Safety</h3>
                     <p class="issue-text">Gun violence kills more young people than car accidents. With almost one mass shooting per day in 2015, we need to make our country safer. Just like the 83% of gun owners that want enhanced background checks, Millennial PAC supports the second amendment and safety.</p>
@@ -149,7 +121,7 @@
                       Learn more ->
                     </button>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 issue-container">
                     <img class="issue-icon" src="./img/voteicon.png">
                     <h3 class="issue-title">Get Out the Vote!</h3>
                     <p class="issue-text">Our voice is good, our vote is better! Keep our elected officials accountable. Click <a href="https://www.usa.gov/register-to-vote#item-212126">here</a> to register in your neck of the woods.</p>
@@ -160,22 +132,6 @@
             </div>
         </div>
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-              </div>
-              <div class="modal-body">
-                <p>Here is where we will put the details about the issue that the user clicked...</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
     </section>
 
 
@@ -196,7 +152,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+    <script src="js/scripts.js"></script>
 
     <!-- c3 and d3 -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
