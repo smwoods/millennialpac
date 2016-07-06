@@ -11,8 +11,11 @@
     <meta name="google-site-verification" content="JuaY405bna4R94anX1gmenbpztYgDnBa4tUQTesswvE" />
     <title>Millennial PAC</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
@@ -24,33 +27,37 @@
 
     <!-- C3 -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css" rel="stylesheet" type="text/css">
-    
+
 
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Brand</a>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">
+                    <img class="nav-logo" src="./img/logo_color.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons nav-menu-icon">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="sass.html">About</a></li>
+                    <li><a href="badges.html">Issues</a></li>
+                    <li><a href="collapsible.html">Get Involved</a></li>
+                    <li><a href="mobile.html">Donate</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="sass.html">About</a></li>
+                    <li><a href="badges.html">Issues</a></li>
+                    <li><a href="collapsible.html">Get Involved</a></li>
+                    <li><a href="mobile.html">Donate</a></li>
+                </ul>
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
-              </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <!-- Intro Header -->
     <section class="intro">
@@ -61,16 +68,14 @@
                 <i class="fa fa-angle-double-down animated"></i>
             </a>
         </div>
-        
+
         <div class="intro-banner">
-            <div class="container">
-                <p class="intro-banner-text">Internships are unregulated. Most are illegal.</p>
-                <button type="button" class="intro-banner-btn btn">
-                  Sign the petition.
-                </button>
-            </div>
+            <span class="intro-banner-text">Internships are unregulated. Know your rights.</span>
+            <button class="intro-banner-btn waves-effect waves-light btn blue">
+              TAKE ACTION
+            </button>
         </div>
-        
+
     </section>
 
     <!-- About Section -->
@@ -79,13 +84,13 @@
             <div class="about-headline">
                 <h3>Young Americans can’t afford to donate to campaigns and don’t vote... Why would Congress listen to us?</h3>
             </div>
-            <div class="row about-text-container">
-                <div class="col-sm-7 about-text">
+            <div class="row">
+                <div class="col l7 about-text">
                     <p>
                         Since the Supreme Court’s decision in Citizens United v. Federal Elections Commission (2010) prohibited restriction on independent expenditure groups fundraising and spending, Super PACs have dominated the political climate. Millennial PAC provides a voice for millennials, by millennials. Young voters, young non-voters, and those too young to vote all need a voice in the world of independent expenditures. We run comprehensive political programs to represent the age demographic without representation in Congress.
                     </p>
                 </div>
-                <div class="col-sm-5 about-graph">
+                <div class="col l5 s6 push-s3 about-graph">
                     <p class="about-graph-title">Outside Spending by Cycle, Excluding Party Committees</p>
                     <div id="chart"></div>
                 </div>
@@ -138,15 +143,15 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p>Copyright &copy; Millennial PAC 2016</p>
         </div>
     </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
@@ -157,7 +162,7 @@
     <!-- c3 and d3 -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.12/d3.min.js"></script>
-   
+
 
 </body>
 

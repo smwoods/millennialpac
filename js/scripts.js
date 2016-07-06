@@ -5,51 +5,52 @@
  */
 
 // jQuery to collapse the navbar on scroll
-$(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
-        $('.navbar-logo').attr('src','img/logo_color.png');
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-        $('.navbar-logo').attr('src','img/logo_white.png');
-    }
-});
+// $(window).scroll(function() {
+//     if ($(".navbar").offset().top > 50) {
+//         $(".navbar-fixed-top").addClass("top-nav-collapse");
+//         $('.navbar-logo').attr('src','img/logo_color.png');
+//     } else {
+//         if ($(window).width() >= 768) {
+//             $(".navbar-fixed-top").removeClass("top-nav-collapse");
+//             $('.navbar-logo').attr('src','img/logo_white.png');
+//         }
+//     }
+// });
 
-$(window).resize(function() {
-    if ($(".navbar").offset().top <= 50) {
-        if ($(window).width() >= 768) {
-            $('.navbar-logo').attr('src','img/logo_white.png');
-        } else {
-            $('.navbar-logo').attr('src','img/logo_color.png');
-        }
-    }
-    
-})
+// $(window).resize(function() {
+//     if ($(".navbar").offset().top <= 50) {
+//         $('.navbar-logo').attr('src','img/logo_white.png');
+//     }
+// })
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+// // jQuery for page scrolling feature - requires jQuery Easing plugin
+// $(function() {
+//     $('a.page-scroll').bind('click', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: $($anchor.attr('href')).offset().top
+//         }, 1500, 'easeInOutExpo');
+//         event.preventDefault();
+//     });
+// });
 
 // Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+// $('.navbar-collapse ul li a').click(function() {
+//     $('.navbar-toggle:visible').click();
+// });
 
 
-$(".issue-btn").click(function(event) {
-    $(event.target).prev().slideToggle();
-});
+// $(".issue-btn").click(function(event) {
+//     $(event.target).prev().slideToggle();
+// });
 
 
-// Creates c3 chart
+
 $(document).ready(function() {
+
+    $(".button-collapse").sideNav();
+
+    // Creates c3 chart
     var chart = c3.generate({
         data: {
             x: 'x',
@@ -71,4 +72,6 @@ $(document).ready(function() {
             hide: true
         }
     });
+
+    
 });

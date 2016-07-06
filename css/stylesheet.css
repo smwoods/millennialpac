@@ -14,16 +14,93 @@ body {
     width: 100%;
     min-width: 260px;
     height: 100%;
-    font-family: 'EB Garamond';
+    font-family: 'Quicksand', sans-serif;
     color: #000;
     background-color: #fff;
 }
 
 h1, h2, h3 {
-    font-family: 'Quicksand', sans-serif;
     letter-spacing: 1px;
 }
 
+@media(min-width:0px) and (max-width:992px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    span {
+        font-size: 14px;
+    }
+}
+
+
+@media(min-width:993px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    span {
+        font-size: 18px;
+    }
+
+}
+
+/* BEGIN NAVBAR */
+
+.navbar-fixed {
+    position: absolute;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+nav li a {
+    color: #34495e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-wrapper {
+    position: relative;
+}
+
+.brand-logo {
+    height: 100%;
+}
+
+.nav-logo {
+    height: 100%;
+    padding: 14px 12px 12px 12px;
+}
+
+.button-collapse {
+    padding-left: 10px;
+}
+
+nav .material-icons {
+    color: #34495e;
+}
+
+/* END NAVBAR */
+
+/* BEGIN INTRO SECTION */
 
 .intro {
     height: 100%;
@@ -52,7 +129,6 @@ h1, h2, h3 {
 
 .intro-banner {
     width: 100%;
-    height: 70px;
     position: absolute;
     bottom: 0;
     background-color: #34495e;
@@ -62,39 +138,64 @@ h1, h2, h3 {
     color: #FFF;
     display: inline-block;
     padding-right: 10px;
+    margin-top: 10px;
 }
 
 .intro-banner-btn {
     height: 46px;
     margin: 12px 0 12px 0;
+    font-weight: bold;
 }
+
+@media(min-width:993px) {
+    .intro-banner-text {
+        font-size: 20px;
+    }
+
+    .intro-banner-btn {
+        margin: 25px 0 25px 0;
+    }
+}
+
+/* END INTRO SECTION */
+
+/* BEGIN ABOUT SECTION */
 
 .about {
     width: 100%;
-    text-align: center;
+    padding: 70px 0 70px 0;
 }
 
 .about-container {
     margin: auto;
     max-width: 900px;
-}
-
-.about-text-container {
-    margin: 0 !important;
+    text-align: center;
 }
 
 .about-headline {
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 
 .about-headline h3 {
     margin: 0;
 }
 
-.about-graph-title {
-    margin-left: 20px;
+.about-text {
+    margin-bottom: 25px;
 }
+
+.about-graph {
+    margin: auto;
+}
+
+.about-graph-title {
+    font-size: 12px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* END ABOUT SECTION */
 
 .issues {
     width: 100%;
@@ -105,118 +206,14 @@ h1, h2, h3 {
 
 .issues-container {
     margin: auto;
-    max-width: 900px;
+    max-width: 960px;
 }
 
 .issue-icon {
-    height: 110px;
+    height: 100px;
 }
 
-@media(min-width:0px) and (max-width:474px) {
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 28px;
-    } 
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .intro-banner-text {
-        display: none;
-    }
-
-    .about-container {
-       padding: 30px 10px 0 10px;
-    }
-
-    .about-text {
-        padding: 0px 15px 10px 15px;
-    }
-
-    .about-graph {
-        padding: 15px;
-    }
-
+.issue-title {
+    height: 60px;
 }
-
-@media(min-width:475px) and (max-width:767px) {
-    h1 {
-        font-size: 44px;
-    }
-
-    h2 {
-        font-size: 34px;
-    } 
-    
-    h3 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .intro-banner-text {
-        font-size: 13px;
-    }
-
-    .about-container {
-       padding: 50px 0 0 0;
-    }
-
-    .about-text {
-        padding: 0 40px 20px 40px;
-    }
-
-    .about-graph {
-        padding: 40px;
-    }
-
-}
-
-@media(min-width:768px) {
-    h1 {
-        font-size: 60px;
-    }
-
-    h2 {
-        font-size: 45px;
-    } 
-    
-    h3 {
-        font-size: 30px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    .about-container {
-       padding: 100px 20px 70px 10px
-    }
-
-
-    .about-text {
-        padding: 40px 5px 0 10px;
-    }
-
-    .about-graph {
-        padding: 15px 5px 0 10px;
-    }
-
-    .about-graph-title {
-        font-size: 12px;
-    }
-}
-
-
-
 
