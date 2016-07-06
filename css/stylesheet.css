@@ -127,6 +127,15 @@ nav .material-icons {
     -o-transform: translateY(-50%);
 }
 
+.intro .btn-large {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.intro .material-icons {
+    margin-top: 3px;
+    font-size: 30px;
+}
+
 .intro-banner {
     width: 100%;
     position: absolute;
